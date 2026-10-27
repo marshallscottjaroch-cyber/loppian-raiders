@@ -1,0 +1,77 @@
+{
+  "generated": "2026-10-27",
+  "missions": [
+    {
+      "mission": 1,
+      "date": "2026-05-30",
+      "voidsunMission": 1,
+      "playerCount": 3,
+      "results": [
+        {
+          "player": "the-covenant-of-the-silent-axiom",
+          "vp": 8
+        },
+        {
+          "player": "raptors-4th-company",
+          "vp": 8
+        },
+        {
+          "player": "hamm-saan-fleet",
+          "vp": 4
+        }
+      ]
+    },
+    {
+      "mission": 2,
+      "date": "2026-07-25",
+      "voidsunMission": 3,
+      "playerCount": 2,
+      "results": [
+        {
+          "player": "raptors-4th-company",
+          "vp": 17
+        },
+        {
+          "player": "the-covenant-of-the-silent-axiom",
+          "vp": 10
+        }
+      ]
+    },
+    {
+      "mission": 3,
+      "date": "2026-09-26",
+      "voidsunMission": 6,
+      "playerCount": 2,
+      "results": [
+        {
+          "player": "the-covenant-of-the-silent-axiom",
+          "vp": 2
+        },
+        {
+          "player": "the-cult-of-excessive-violence",
+          "vp": 2
+        }
+      ]
+    },
+    {
+      "mission": 4,
+      "date": "2026-10-25",
+      "voidsunMission": 14,
+      "playerCount": 4,
+      "results": [
+        {
+          "player": "the-covenant-of-the-silent-axiom",
+          "vp": 5.5
+        },
+        {
+          "player": "3rd-aegis-strike-force",
+          "vp": 5.5
+        },
+        {
+          "player": "raptors-4th-company",
+          "vp": 5
+        }
+      ]
+    }
+  ]
+}

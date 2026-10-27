@@ -1,0 +1,94 @@
+{
+  "logs": [
+    {
+      "id": "m1-captain-tiberius",
+      "mission": 1,
+      "author": "Captain Tiberius",
+      "faction": "raptors-4th-company",
+      "title": "Battle for Okamec — After Action Report",
+      "body": "data/logs/m1-captain-tiberius.html",
+      "original": "files/logs/m1-captain-tiberius.docx",
+      "subtitle": "Captain’s Log, star date 5.30.26"
+    },
+    {
+      "id": "m1-deacon-amos-vyrn",
+      "mission": 1,
+      "author": "Deacon-Champion Amos Vyrn",
+      "faction": "the-covenant-of-the-silent-axiom",
+      "title": "Report to the Elder: Aftermath – Mission 1, Aerial Theatre",
+      "body": "data/logs/m1-deacon-amos-vyrn.html",
+      "original": "files/logs/m1-deacon-amos-vyrn.docx",
+      "subtitle": "The Silent Axiom’s Report – Okamec, 30MAY26"
+    },
+    {
+      "id": "m1-farseer-calrad-faentar",
+      "mission": 1,
+      "author": "Farseer Calrad Faentar",
+      "faction": "hamm-saan-fleet",
+      "title": "Psychic Resonance Log: Aftermath – Mission 1, Aerial Theatre",
+      "body": "data/logs/m1-farseer-calrad-faentar.html",
+      "original": "files/logs/m1-farseer-calrad-faentar.docx",
+      "subtitle": "Dispatch from the Hamm-Saan Fleet — Okamec"
+    },
+    {
+      "id": "m2-captain-tiberius",
+      "mission": 2,
+      "author": "Captain Tiberius",
+      "faction": "raptors-4th-company",
+      "title": "The Ontranis Descent — After Action Report",
+      "body": "data/logs/m2-captain-tiberius.html",
+      "original": "files/logs/m2-captain-tiberius.docx",
+      "subtitle": "Captain’s Log, star date 7.25.26"
+    },
+    {
+      "id": "m2-deacon-amos-vyrn",
+      "mission": 2,
+      "author": "Deacon-Champion Amos Vyrn",
+      "faction": "the-covenant-of-the-silent-axiom",
+      "title": "Report to the Elder: Aftermath – Mission 2, Dark Cave",
+      "body": "data/logs/m2-deacon-amos-vyrn.html",
+      "original": "files/logs/m2-deacon-amos-vyrn.docx",
+      "subtitle": "The Silent Axiom’s Report – Ontranis, 25JUL26"
+    },
+    {
+      "id": "m3-deacon-amos-vyrn",
+      "mission": 3,
+      "author": "Deacon-Champion Amos Vyrn",
+      "faction": "the-covenant-of-the-silent-axiom",
+      "title": "Report to the Elder: Aftermath – Mission 3, Excavation Site",
+      "body": "data/logs/m3-deacon-amos-vyrn.html",
+      "original": "files/logs/m3-deacon-amos-vyrn.pdf",
+      "subtitle": "The Silent Axiom’s Report – Xolkan, 26SEP26"
+    },
+    {
+      "id": "m4-captain-tiberius",
+      "mission": 4,
+      "author": "Captain Tiberius",
+      "faction": "raptors-4th-company",
+      "title": "Bloodbath on Tlatec",
+      "body": "data/logs/m4-captain-tiberius.html",
+      "original": "files/logs/m4-captain-tiberius.pdf",
+      "subtitle": "Captain’s Log, star date 10.25.26"
+    }
+  ],
+  "pending": [
+    {
+      "mission": 3,
+      "author": "Chudgore",
+      "faction": "the-cult-of-excessive-violence",
+      "note": "Log not yet submitted."
+    },
+    {
+      "mission": 4,
+      "author": "Deacon-Champion Amos Vyrn",
+      "faction": "the-covenant-of-the-silent-axiom",
+      "note": "Report to the Elder for Mission 4 is being written."
+    },
+    {
+      "mission": 4,
+      "author": "Commander Vectrix",
+      "faction": "3rd-aegis-strike-force",
+      "note": "Log not yet submitted."
+    }
+  ]
+}

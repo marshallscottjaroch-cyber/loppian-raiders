@@ -1,0 +1,50 @@
+:root{--bg:#07090f;--panel:#0f1420;--panel2:#141b2b;--line:#23304a;--text:#d9e2f2;--muted:#8796b3;--accent:#f5a524;--accent2:#5ec8ff;--good:#7be495;--bad:#ff6b6b}
+*{box-sizing:border-box}
+html{background:radial-gradient(ellipse at 70% -10%,#2a1606 0%,transparent 45%),radial-gradient(ellipse at 10% 0%,#0c2140 0%,transparent 40%),var(--bg);min-height:100%}
+body{margin:0;color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+a{color:var(--accent2)}
+h1,h2,h3{font-family:"Rajdhani","Orbitron",system-ui,sans-serif;letter-spacing:.04em;line-height:1.25}
+h1{font-size:1.9rem;margin:1.4rem 0 .3rem;text-transform:uppercase}
+h2{font-size:1.35rem;color:var(--accent);margin:1.6rem 0 .6rem;text-transform:uppercase}
+h3{font-size:1.05rem;margin:1rem 0 .4rem;color:var(--accent2);text-transform:uppercase}
+.muted{color:var(--muted)}.small{font-size:.85rem}
+.site-header{border-bottom:1px solid var(--line);background:rgba(7,9,15,.85);backdrop-filter:blur(6px);position:sticky;top:0;z-index:5}
+.site-header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding-top:10px;padding-bottom:10px}
+.brand{display:flex;gap:10px;align-items:center;color:var(--text);text-decoration:none}
+.brand strong{display:block;letter-spacing:.2em}.brand small{color:var(--muted);font-size:.75rem}
+.sun{width:28px;height:28px;border-radius:50%;background:radial-gradient(circle,#000 38%,var(--accent) 40%,#ff5a00 60%,transparent 72%);box-shadow:0 0 18px #ff7a00aa}
+nav{display:flex;flex-wrap:wrap;gap:4px}
+nav a{color:var(--muted);text-decoration:none;padding:6px 10px;border-radius:6px;font-size:.92rem;text-transform:uppercase;letter-spacing:.06em}
+nav a:hover{color:var(--text);background:var(--panel2)}
+nav a.active{color:#000;background:var(--accent)}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.note{border-left:3px solid var(--accent);background:#1a1508;padding:10px 14px;border-radius:6px;font-size:.92rem;color:#e9d9b8}
+.table-scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+th{color:var(--muted);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+td.num,th.num{text-align:right}
+tr.top1 td:first-child{color:var(--accent);font-weight:700}
+.rank{display:inline-block;width:1.8em;height:1.8em;line-height:1.8em;text-align:center;border-radius:50%;background:var(--panel2);border:1px solid var(--line)}
+tr.top1 .rank{background:var(--accent);color:#000;border-color:var(--accent)}
+.sub{display:block;color:var(--muted);font-size:.8rem}
+.dash{color:#3b4866}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.tag{display:inline-block;font-size:.75rem;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);margin-right:6px}
+.tag.hot{border-color:var(--accent);color:var(--accent)}
+details{border:1px solid var(--line);border-radius:8px;margin:8px 0;background:#0b1019}
+summary{cursor:pointer;padding:10px 14px;font-weight:600;color:var(--accent2);text-transform:uppercase;letter-spacing:.05em;font-size:.9rem}
+details>div{padding:0 16px 12px}
+dl.rules dt{font-weight:700;color:var(--text);margin-top:8px}dl.rules dd{margin:2px 0 0 0;color:#c4cee2}
+.story p{margin:.7em 0}
+.log-body{max-width:70ch}.log-body p{margin:.8em 0}.log-body img{max-width:100%;height:auto;border-radius:6px}
+.pending{border-style:dashed;opacity:.8}
+.toc a{margin-right:12px}
+.btns a{display:inline-block;margin:4px 8px 0 0;padding:6px 12px;border:1px solid var(--line);border-radius:6px;text-decoration:none;font-size:.88rem}
+.btns a:hover{border-color:var(--accent2)}
+footer{padding:30px 16px 40px}
+@media (max-width:600px){h1{font-size:1.5rem}th,td{padding:7px 6px}.card{padding:14px}}
+td:has(.sub),td:first-child{white-space:normal}
+@media (max-width:600px){th{font-size:.7rem;letter-spacing:.02em}td .sub{font-size:.72rem}}
+.btns a.primary{background:var(--accent2);border-color:var(--accent2);color:#111;font-weight:600}

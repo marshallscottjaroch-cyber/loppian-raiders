@@ -1,0 +1,35 @@
+[
+  {
+    "id": "the-covenant-of-the-silent-axiom",
+    "loreName": "The Covenant of the Silent Axiom",
+    "army": "Dao Union",
+    "commander": "Deacon Amos Vyrn"
+  },
+  {
+    "id": "raptors-4th-company",
+    "loreName": "Raptors 4th Company",
+    "army": "Dark Prime Brothers",
+    "commander": "Captain Tiberius",
+    "otherCharacters": [
+      "Brother Leonidas"
+    ]
+  },
+  {
+    "id": "hamm-saan-fleet",
+    "loreName": "Hamm-Saan Fleet",
+    "army": "High Elf Fleets",
+    "commander": "Farseer Calrad Faentar"
+  },
+  {
+    "id": "the-cult-of-excessive-violence",
+    "loreName": "The Cult of Excessive Violence",
+    "army": "Plague Disciples",
+    "commander": "Chudgore"
+  },
+  {
+    "id": "3rd-aegis-strike-force",
+    "loreName": "3rd Aegis Strike Force",
+    "army": "Robot Legions",
+    "commander": "Commander Vectrix"
+  }
+]

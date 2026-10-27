@@ -1,0 +1,233 @@
+[
+  {
+    "mission": 1,
+    "date": "2026-05-30",
+    "voidsunMission": 1,
+    "voidsunName": "Aerial Theatre",
+    "title": "Plunder of Okamec",
+    "briefing": [
+      "The inner world of Okamec was once a jewel of the Loppian System — golden temples rising above lush jungles, its skies filled with trading skiffs and the songs of prosperous Saurian hosts. Then the miasma came.",
+      "Now the planet is a rotting paradise. Fungal cathedrals pierce the toxic haze. Rivers of slime carry the whispers of Plague Daemon Poisonzeal. Ancient treasures still gleam beneath layers of decay: Voidcrown fragments, priceless Saurian relics, and stockpiles of preplague technology ripe for the taking. Long-term occupation is suicide. The miasma eats through seals, fouls engines, and drives even the toughest warriors mad within days. Yet the spoils are too rich to ignore.",
+      "Word of the windfall has drawn warbands, mercenary companies, corporate strike teams, cult raiders, and opportunistic warlords from across the Loppian System and beyond. Your army is among them. Whether you fight for survival, profit, forbidden knowledge, glory, or simple bloody conquest, the objective is the same: drop fast, grab what you can, and get off-world before the planet claims you.",
+      "High-altitude insertion craft scream through the poisoned skies. Drop pods and aerial transports disgorge troops straight into the ruins while rival forces clash overhead. Every faction has its own reasons for being here tonight:",
+      "- Some seek critical spare parts to keep their fleets or factories running.",
+      "- Others hunt relics or xenotech that could shift the balance of power in the wider war.",
+      "- Mercenaries chase fat contracts and whatever they can carry in their holds.",
+      "- Cults and rogue elements chase power, madness, or glory in the miasma’s twisted gifts.",
+      "There is no time for grand strategy or holding ground. Strike hard, seize the objectives, destroy anyone who stands in your way, and exfiltrate with the loot. The planet does not forgive hesitation.",
+      "The skies above the ruins of Okamec are your battlefield. The winner is the force that plunders the most and still has troops left to fly away when the last transport lifts off.",
+      "Good hunting. The miasma waits for no one."
+    ],
+    "files": {
+      "rules": "files/rules/mission-1-rules.pdf",
+      "briefing": "files/briefings/mission-1-briefing.pdf",
+      "packet": "files/packets/loppian-raiders-mission-1-packet.pdf"
+    },
+    "gameNote": "3-player game: we had an odd number of players, and this mission's VP scoring isn't tied to a single opponent.",
+    "rules": {
+      "background": "Few forces had the fortitude to maintain a prolonged campaign amid the poisonous miasmas of Okamec. The majority of fighting there took place in the skies above, with only short, surgical missions being sent to the ground below.",
+      "setup": [
+        "Battlefield: 6'×4' area with 15+ pieces of terrain.",
+        "Armies: equal point cost; each army must have at least one unit with Ambush.",
+        "Deployment: roll-off; the winner picks zone A or B. Players alternate placing one unit each within their deployment zone, starting with the roll-off winner.",
+        "First turn: the player that won the deployment roll-off."
+      ],
+      "objectives": [
+        "Before deployment, place one objective marker at the centre of the table, then players set up a total of 2 more. Roll-off to see who goes first, then alternate placing one marker each outside the deployment zones and at least 9\" from other objectives.",
+        "At the end of each round, a unit within 3\" of a marker while no enemies are seizes it. Markers do not stay under control after leaving; if both sides contest a marker it becomes neutral."
+      ],
+      "scoring": [
+        "End of each round: 3 VP to the player that controls the active objective.",
+        "End of game: 1 VP for each enemy unit destroyed.",
+        "End of game: +1 VP if no enemy unit is within 3\" of any objective marker.",
+        "The game ends after 4 rounds. Most VP wins."
+      ],
+      "special": [
+        [
+          "Aerial Theater",
+          "Units must have the Aircraft rule, must use the Ambush rule, or must be inside a Transport to be deployed. Units without any of these may only be deployed via Ambush at the beginning of round 4."
+        ],
+        [
+          "First on the Field",
+          "Units may deploy from Ambush on the first round of the game."
+        ],
+        [
+          "Comms-Relay",
+          "At the beginning of each round, roll a D3 to determine which objective marker is active."
+        ],
+        [
+          "Airforce Equipment (special equipment)",
+          "Before the game begins, each army may give D6+3 units one of the following each: Homing Beacon (friendly units using Ambush may ignore distance restrictions from enemies if within 12\" of this model); Dive Chutes (this unit gets the Ambush special rule); Interceptor Array (this unit gets the Lock-On rule on one of its ranged weapons)."
+        ]
+      ]
+    }
+  },
+  {
+    "mission": 2,
+    "date": "2026-07-25",
+    "voidsunMission": 3,
+    "voidsunName": "Dark Cave",
+    "title": "Veins of Shadow: The Ontranis Descent",
+    "briefing": [
+      "During the plunder of Okamec’s poisoned skies, warbands uncovered a derelict comms station still clinging to power amid the fungal ruins. From its fractured arrays came a broken transmission — a psychic signature and coordinates pointing to a Voidcrown shard buried deep beneath the frozen crust of Ontranis.",
+      "The outer world offered no easy prize. Once a dutiful mining colony under the Frog-Mages’ Truth, Ontranis now lies scarred by rebellion and the growing psychic storms. The shard’s call drew the hunters underground into vast, lightless cave networks. A fragment of the ancient crown, if united with its lost siblings, could crown the Voidsun itself and let its bearer bend the raging psychic tempests to their will. Some descend chasing that terrible power. Others seek shelter from the lethal cold above or simply move to deny the prize to their rivals. All will learn that the dark holds its own hungers.",
+      "The caves are treacherous ground. Low ceilings choke the skies, forcing even the swiftest to tread like mortals. Without warning the rock betrays, sinkholes yawning wide to swallow units whole and spit them out elsewhere in the labyrinth. Jagged stalactites loom overhead, ready to be shattered into killing rain. And the shadows themselves hunger, striking hardest at those who linger near the edges or reveal their positions with flickering lights.",
+      "Warbands must seize and hold scattered objectives in this black maze while balancing the double-edged gift of illumination. Light reveals the foe but paints clear targets; killing the lamps invites the dark to feed. The fight will not end with a clean exfil. It will grind on until one side dominates the depths or the caves themselves grow weary of the intruders.",
+      "The Voidsun stirs above the ice. Descend. Claim the shard. Pray the shadows do not claim you first.",
+      "The abyss is watching."
+    ],
+    "files": {
+      "rules": "files/rules/mission-2-rules.pdf",
+      "briefing": "files/briefings/mission-2-briefing.pdf",
+      "packet": "files/packets/loppian-raiders-mission-2-packet.pdf"
+    },
+    "rules": {
+      "background": "The battle for Ontranis eventually led underground, whether pursuing the crystal or merely to seek shelter from the cold. Darkness is a more fearsome foe here than opposing armies, as the unwary are swallowed by deep sinkholes, and creatures await to strike from the dark.",
+      "setup": [
+        "Battlefield: 6'×4' area with 15+ pieces of terrain.",
+        "Armies: equal point cost; no aircraft units.",
+        "Deployment: roll-off; the winner picks zone A or B. Players alternate placing one unit each within section 1 of their deployment zone, starting with the roll-off winner.",
+        "First turn: the player that won the deployment roll-off."
+      ],
+      "objectives": [
+        "Before deployment, set up a total of 6 objective markers. Roll-off to see who goes first, then alternate placing one marker each outside the deployment zones and at least 9\" from other objectives.",
+        "At the end of each round, a unit within 3\" of a marker while no enemies are seizes it. Markers stay under control after leaving; if both sides contest a marker it becomes neutral."
+      ],
+      "scoring": [
+        "End of each round: 1 VP for each objective marker controlled.",
+        "+1 VP if at least one non-shaken unit is in the enemy deployment zone.",
+        "+1 VP if they destroyed at least one enemy unit.",
+        "From the end of round 4, roll a die at the end of each round: on 4+ the game continues; on 1-3 it ends. Most VP wins."
+      ],
+      "special": [
+        [
+          "Low Ceiling",
+          "Units with Flying count as having the Strider rule instead."
+        ],
+        [
+          "Deep Sinkhole",
+          "At the beginning of each round, roll one die for each unit in your army. On a 1 the unit is removed from the table, and may be placed anywhere within 6\" of its original position at the end of the round."
+        ],
+        [
+          "Shoot Stalactites",
+          "When shooting at enemy units, you may fire at the stalactites above the target instead. Resolve as a regular attack with no modifiers; for each hit the target takes D3 hits with no special rules, regardless of weapon."
+        ],
+        [
+          "Shadows in the Dark",
+          "At the end of each round roll one die for each unit within 12\" of the table edge. On a 1-3 the unit takes D3 wounds."
+        ],
+        [
+          "Flashlights (special equipment)",
+          "All units start with flashlights on; when activated a unit may switch them on/off. Enemies get +1 to hit targets with flashlights on and -1 to hit if off, but units with flashlights off always count as within 12\" of the table edge for Shadows in the Dark."
+        ]
+      ]
+    }
+  },
+  {
+    "mission": 3,
+    "date": "2026-09-26",
+    "voidsunMission": 6,
+    "voidsunName": "Excavation Site",
+    "title": "Resonance Cascade: The Dig on Xolkan",
+    "briefing": [
+      "The crystal found in the caves of Ontranis did not remain silent after it was claimed. Contact with a living mind, and the moment it was carried off-world, sent a psychic shock through the remaining shards. Across the Loppian System the cascade answered. Every sensor, every scavenged detector, every fractured psy-array lit with the same screaming signature. At the same time the Voidsun itself began to stir. The second Voidcrown fragment had revealed itself — buried deep in the wreckage fields of Xolkan.",
+      "Once the culmination of the Frog-Mages’ psychic ambitions, the Voidsun lies at the heart of the system: a second sun of pure psychic fire, born when the ancient storms were forced into a single raging heart. The three crystals are the keys that once channelled its power. Since the first shard left Ontranis the black sun has grown restless. Storms have thickened across the outer worlds. Reality frays a little further each day. The pressure is no longer subtle, and every warband with eyes to see can feel the change.",
+      "Xolkan was never a gentle world. Long ago it served as a mining colony under the Frog-Mages’ Truth, its surface scarred by open pits and half-buried machinery. Now the outer world is a graveyard of shattered hulls, collapsed temples, and abandoned dig sites. The cascade has drawn every ambitious warband to the same coordinates, where the second crystal lies buried beneath layers of wreckage and frozen earth. Some come seeking the power the shards promise. Others come only to deny that power to their rivals. All of them must dig.",
+      "The dig site itself is treacherous ground. Broken decks and ancient stone form a maze of unstable trenches, collapsing platforms, and half-excavated chambers. The psychic cascade rattles the air. Heavy machinery lies half-buried in the ice, its silence broken only by the occasional groan of shifting wreckage. The longer the battle rages, the more the ground seems to settle and shift as if the world itself is listening to the resonance. Warbands must push into the heart of the excavation, seize the key sites that mark the crystal’s resting place, and hold them long enough to extract the prize. There will be no clean extraction. Only the force that dominates the dig and still has strength left to carry the shard away will leave Xolkan richer than they arrived.",
+      "The Voidsun is stirring. The storms are already howling."
+    ],
+    "files": {
+      "rules": "files/rules/mission-3-rules.pdf",
+      "briefing": "files/briefings/mission-3-briefing.pdf",
+      "packet": "files/packets/loppian-raiders-mission-3-packet.pdf"
+    },
+    "rules": {
+      "background": "Xolkan is littered with valuable equipment fallen from the wreckage fields above its skies; Jackals had long visited the world to collect salvage. Many of those who came seeking the Voidcrown crystal hidden there instead found themselves added to the pile of debris.",
+      "setup": [
+        "Battlefield: 6'×4' area with 15+ pieces of terrain.",
+        "Armies: equal point cost.",
+        "Deployment: roll-off; the winner picks zone A or B. Players alternate placing one unit each within their deployment zone, starting with the roll-off winner.",
+        "First turn: the player that won the deployment roll-off."
+      ],
+      "objectives": [
+        "Before deployment, set up a total of D3+3 objective markers. Roll-off to see who goes first, then alternate placing one marker each outside the deployment zones and at least 9\" from other objectives.",
+        "At the end of each round, a unit within 3\" of a marker while no enemies are seizes it. Markers stay under control after leaving; if both sides contest a marker it becomes neutral."
+      ],
+      "scoring": [
+        "End of game: 1 VP for each objective fully excavated.",
+        "+1 VP if they fully excavated more objective markers than their opponent.",
+        "+1 VP if at least one non-shaken unit is in the enemy deployment zone.",
+        "+1 VP if they destroyed at least three enemy units.",
+        "The game ends after 5 rounds. Most VP wins."
+      ],
+      "special": [
+        [
+          "Excavation",
+          "At the end of each round, starting with the player that finished activating first, players alternate excavating one objective they control with a friendly unit within 3\". Place an excavation token on it and roll D3+X (X = tokens on it). On 4+ it is fully excavated and removed; then roll on the table below for one random friendly unit within 3\": 1-2 Hidden Bomb (unit takes D6 hits with AP(2)); 3-4 Teleporter (unit may be placed anywhere over 9\" from enemies); 5-6 Ammo Cache (unit may immediately shoot)."
+        ],
+        [
+          "Mining Drill (special equipment)",
+          "Before the game, each army may give one unit a mining drill. If it is within 3\" of an objective at the end of the round, you may add one excavation token on it."
+        ],
+        [
+          "Wave Locator (special equipment)",
+          "Before the game, each army may give one unit a wave locator. Once per game, if that unit is within 3\" of an objective when it is fully excavated, you may re-roll on the excavation table."
+        ]
+      ]
+    }
+  },
+  {
+    "mission": 4,
+    "date": "2026-10-25",
+    "voidsunMission": 14,
+    "voidsunName": "Psychic Nightmare",
+    "title": "The Beacons Drink: The Third Crystal on Tlatec",
+    "briefing": [
+      "The second shard did not stay buried. On the wreckage fields of Xolkan the dig ended in fire and stolen ground. Derelict demolition charges tore the trenches. Old teleporter-gates swallowed men and machines alike. When the smoke cleared, warlord Chudgore’s Cult of Excessive Violence dragged the waking crystal from the field. The warbands that had marked the pits were too broken to pursue. Two Voidcrown shards now ride in hostile hands — one taken in the dark of Ontranis, one torn from Xolkan. The Voidsun heard both.",
+      "The third answered on Tlatec. It is the last of the Voidcrown crystals. Whoever carries it off this world holds the final key.",
+      "Tlatec is the cursed hinge of the outer worlds: storm-racked isles and black water, where the Frog-Mages once caged the system’s psychic tempests and hid the heart of the Voidcrown. Long before the raids they raised beacons across those isles to drink the storms and keep the crown asleep. Travel here was a death sentence. Now the resonance of the stolen shards has torn the last crystal from its sleep beneath the waves. As it woke, the beacons fired. They no longer gather power for sleeping mages. They pour it into anyone fool enough to stand in their light.",
+      "Four beacons burn on the fighting ground. A caster who closes within their radius may draw a working from the crystal itself — one gift, once a round, unpaid. The gift is not clean. Reach wrong and the pylon bites the mind that touched it. Worse, the crystal does not hold a steady note. Each round the wake shifts, and the isles answer with a different cruelty. A squad may turn on itself. A spell that should have been clean burns the hand that shaped it. Wounds open wider than the blow that made them. Those who freeze are taken by the light. Courage fails without warning. The beacons choose. No commander chooses for them.",
+      "There is no ground worth holding for its own sake. The purpose is the crystal. Break the rival host. Kill their casters before they drink the beacons dry. Every successful casting is a mark the shard will remember, and only the warband that still stands when the light fades will leave Tlatec with the third and final key. Profit, vengeance, forbidden knowledge, or the need to deny the crown: the reasons differ. The crystal does not.",
+      "The storms are no longer watching from orbit. They are in the working."
+    ],
+    "files": {
+      "rules": "files/rules/mission-4-rules.pdf",
+      "briefing": "files/briefings/mission-4-briefing.pdf",
+      "packet": "files/packets/loppian-raiders-mission-4-packet.pdf"
+    },
+    "gameNote": "4-player game: the Raptors 4th Company (4000 pts) were led by Captain Tiberius and Brother Leonidas. The Covenant of the Silent Axiom (Deacon Amos Vyrn) and the 3rd Aegis Strike Force (Commander Vectrix), 2000 pts each, had one commander apiece; their side's VP was split evenly between the two armies, while the Raptors kept their VP undivided.",
+    "rules": {
+      "background": "The Frog-Mages ordered the construction of beacons in an attempt to collect the psychic energy of Tlatec. During the search for the Voidcrown, these became hotspots of conflict even as anomalies manifested that bent minds and bodies alike.",
+      "setup": [
+        "Battlefield: 6'×4' area with 15+ pieces of terrain.",
+        "Armies: equal point cost; each army must have at least one caster.",
+        "Special set-up: before deployment, roll-off, then alternate placing a total of 4 caster beacon markers anywhere over 9\" from other markers and the table edge, starting with the roll-off winner.",
+        "Deployment: roll-off; the winner picks zone A or B. Players alternate placing one unit each within their deployment zone, starting with the roll-off winner.",
+        "First turn: the player that won the deployment roll-off."
+      ],
+      "objectives": [
+        "Before the game begins, count the total number of units in each army (combined units and heroes joining units count as one)."
+      ],
+      "scoring": [
+        "End of game: 2 VP for destroying at least half of the units in the enemy army.",
+        "+1 VP for each enemy caster destroyed.",
+        "+1 VP for each time they successfully cast a spell.",
+        "The game ends after 4 rounds. Most VP wins."
+      ],
+      "special": [
+        [
+          "Psychic Beacons",
+          "Once per round, all casters within 6\" of a beacon may try to cast one level 1 spell for free."
+        ],
+        [
+          "Psychic Backlash",
+          "Whenever a caster rolls an unmodified 1 when trying to cast a spell, they take D3 wounds."
+        ],
+        [
+          "Psychic Terrors",
+          "At the beginning of each round roll one die and apply until the end of the round: 1 Madness (one random unit from each army takes a morale test; if failed it takes 1 wound and keeps testing until it passes or is destroyed); 2 Torture (casters take backlash wounds on 1s and 6s); 3 Agony (units wounded by shooting take D3 extra wounds); 4 Mania (units wounded in melee take D3 extra wounds); 5 Apathy (units that don't move take D3 wounds at the end of their activation); 6 Despair (all units get -4 to morale test rolls)."
+        ]
+      ]
+    }
+  }
+]

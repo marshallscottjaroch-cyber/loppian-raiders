@@ -81,18 +81,17 @@
       "subtitle": "The Silent Axiom’s Report – Tlatec, 22AUG26"
     }
   ],
-  "pending": [
+  "pending": [],
+  "noLogExpected": [
     {
       "mission": 3,
-      "author": "Chudgore",
       "faction": "the-cult-of-excessive-violence",
-      "note": "Log not yet submitted."
+      "note": "Chudgore will not be writing a log."
     },
     {
       "mission": 4,
-      "author": "Commander Vectrix",
       "faction": "3rd-aegis-strike-force",
-      "note": "Log not yet submitted."
+      "note": "Commander Vectrix will not be writing a log."
     }
   ]
 }

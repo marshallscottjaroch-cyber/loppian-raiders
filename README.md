@@ -48,6 +48,7 @@ Technical steps:
 1. Convert the report to HTML paragraphs (`<p>…</p>`; images go in `files/logs/img/` and are referenced with `<img src="files/logs/img/…">`). For .docx: `python3 -c "import mammoth,sys;print(mammoth.convert_to_html(open(sys.argv[1],'rb')).value)" report.docx > data/logs/m5-captain-tiberius.html`
 2. Copy the original into `files/logs/`.
 3. Add an entry to `data/logs/index.json` → `logs`: `{"id","mission","author","faction" (player id),"title","subtitle","body":"data/logs/<id>.html","original":"files/logs/<file>"}`. Remove any matching `pending` entry.
+4. If a player will **not** write a log for a mission, add `{"mission": N, "faction": "<player id>", "note": "…"}` to `noLogExpected` in `data/logs/index.json` (and drop its `pending` entry). The site never shows a pending card for those, and the importer (`gen.py`) keeps the list and skips them.
 
 ## Share on Discord
 Pin a message in your campaign channel with just the site link (and optionally a link per page, e.g. `.../missions.html#mission-5`). Each page has Open Graph title/description tags, so Discord shows a tidy preview card. For a new mission, post the packet PDF (Download rules + briefing button) as an attachment along with the link.

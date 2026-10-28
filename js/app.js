@@ -78,7 +78,7 @@
   }
 
   function logPage(ctx) {
-    const { logs, pending } = ctx.logs;
+    const { logs, noLogExpected } = ctx.logs; const skip = new Set((noLogExpected || []).map(x => x.mission + '|' + x.faction)); const pending = (ctx.logs.pending || []).filter(x => !skip.has(x.mission + '|' + x.faction));
     const secs = ctx.missions.slice().sort((a, b) => a.mission - b.mission).map(m => {
       const ls = logs.filter(l => l.mission === m.mission), pd = (pending || []).filter(l => l.mission === m.mission);
       if (!ls.length && !pd.length) return '';

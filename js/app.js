@@ -8,12 +8,12 @@
   const fmt = n => (Math.round(n * 100) / 100).toString();
   const fmtDate = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 
-  Promise.all([get('data/players.json'), get('data/results.json'), get('data/missions.json'), get('data/logs/index.json')])
-    .then(([players, results, missions, logs]) => {
+  Promise.all([get('data/players.json'), get('data/results.json'), get('data/missions.json'), get('data/logs/index.json'), get('data/current-mission.json').catch(() => null)])
+    .then(([players, results, missions, logs, current]) => {
       const P = Object.fromEntries(players.map(p => [p.id, p]));
       const R = Object.fromEntries(results.missions.map(m => [m.mission, m]));
       document.getElementById('updated').textContent = results.generated ? fmtDate(results.generated) : '—';
-      const ctx = { players, P, results, R, missions, logs };
+      const ctx = { players, P, results, R, missions, logs, current };
       ({ standings, missions: missionsPage, factions, log: logPage })[page](ctx);
       if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) { if (el.tagName === 'DETAILS') el.open = true; el.scrollIntoView(); } }
     })
@@ -34,12 +34,39 @@
     const ms = ctx.results.missions;
     const matrix = rows.map(x => `<tr><td>${esc(x.p.loreName)}</td>${ms.map(m => `<td class="num">${m.mission in x.per ? fmt(x.per[m.mission]) : '<span class="dash">–</span>'}</td>`).join('')}<td class="num"><strong>${fmt(x.vp)}</strong></td></tr>`).join('');
     const mname = n => ctx.missions.find(m => m.mission === n);
-    app.innerHTML = `<h1>Standings</h1><p class="muted">Ranked by victory points per game played (total VP ÷ games).</p>
+    app.innerHTML = currentMission(ctx) + `<h1>Standings</h1><p class="muted">Ranked by victory points per game played (total VP ÷ games).</p>
       <div class="card table-scroll"><table><thead><tr><th>#</th><th>Faction</th><th class="num">Total VP</th><th class="num">Games</th><th class="num">VP / Game</th></tr></thead><tbody>${body}</tbody></table></div>
       <p class="note">Early-campaign caution: several factions have only played one game, so a single result swings their VP/game a lot. Rankings will settle as more missions are played.</p>
       <h2>VP by mission</h2>
       <div class="card table-scroll"><table><thead><tr><th>Faction</th>${ms.map(m => `<th class="num"><a href="missions.html#mission-${m.mission}">M${m.mission}</a><span class="sub">${esc(mname(m.mission)?.voidsunName || '')}</span></th>`).join('')}<th class="num">Total</th></tr></thead><tbody>${matrix}</tbody></table></div>
       <p class="muted small">VP are scored per each mission's own rules, so VP totals are not directly comparable between missions. “–” = did not play.</p>`;
+  }
+
+  function currentMission(ctx) {
+    const c = ctx.current; if (!c) return '';
+    const m = ctx.missions.find(x => x.mission === c.mission); if (!m) return '';
+    const end = new Date(`${c.deadline}T23:59:59${c.deadlineUtcOffset || '-04:00'}`);
+    const ms = end - Date.now(), days = Math.ceil(ms / 86400000);
+    const dl = fmtDate(c.deadline);
+    const count = ms < 0 ? `<span class="countdown past">Deadline passed (${dl})</span>`
+      : `<span class="countdown">${days <= 1 ? 'Due today' : days + ' days left'}</span>`;
+    const r = m.rules;
+    const rules = r ? `
+      ${r.background ? `<p><em>${esc(r.background)}</em></p>` : ''}
+      <h3>Set-up, forces & deployment</h3>${list(r.setup)}
+      ${r.objectives && r.objectives.length ? `<h3>Objectives</h3>${list(r.objectives)}` : ''}
+      <h3>VP scoring</h3>${list(r.scoring)}
+      <h3>Special rules</h3><dl class="rules">${r.special.map(([t, d]) => `<dt>${esc(t)}</dt><dd>${esc(d)}</dd>`).join('')}</dl>`
+      : `<p class="note">${esc(m.rulesNote || 'See the rules PDF.')}</p>`;
+    return `<section class="card current" id="current-mission">
+      <span class="tag hot">Current mission · ${esc(c.month || '')}</span><span class="tag">JAX OPR Mission ${m.mission}</span><span class="tag">Voidsun Mission ${m.voidsunMission}</span>
+      <h1>${m.voidsunName ? esc(m.voidsunName) + ' — ' : ''}${esc(m.title)}</h1>
+      <p class="deadline">Report results by <strong>${dl}</strong> (end of day, Eastern) ${count}</p>
+      <div class="btns">${m.files.packet ? `<a class="primary" href="${esc(m.files.packet)}" download>Download rules + briefing (1 PDF)</a>` : ''}${m.files.briefing ? `<a href="${esc(m.files.briefing)}">Briefing PDF</a>` : ''}${m.files.rules ? `<a href="${esc(m.files.rules)}">Rules PDF</a>` : ''}<a href="missions.html#mission-${m.mission}">Mission page</a></div>
+      <details open><summary>Mission briefing</summary><div class="story">${m.briefing.map(p => `<p>${esc(p)}</p>`).join('')}</div></details>
+      <details open><summary>Rules, forces & VP scoring</summary><div>${rules}</div></details>
+      <p class="note"><strong>How to report:</strong> play the mission and send your result (VP for each faction) to the campaign organizer by ${dl}. Narrative logs for the campaign log are welcome too.</p>
+    </section>`;
   }
 
   function list(arr) { return `<ul>${arr.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`; }

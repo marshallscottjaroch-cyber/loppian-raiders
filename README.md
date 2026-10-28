@@ -18,6 +18,7 @@ python3 -m http.server 8000
 | `data/players.json` | Factions: id, loreName, army, commander (**no Discord names or real names**) |
 | `data/results.json` | VP per faction per mission (generated from the sheet) |
 | `data/missions.json` | Mission date, Voidsun number/name, briefing paragraphs, rules (setup/objectives/scoring/special), PDF links |
+| `data/current-mission.json` | Which mission is active this month + reporting deadline (home page card) |
 | `data/logs/index.json` | List of narrative logs + `pending` entries; each log body is an HTML file in `data/logs/` |
 | `files/` | Original briefing/rules PDFs and original log files |
 
@@ -33,6 +34,13 @@ You need: the mission number, the briefing PDF and the rules PDF.
 5. Record the scores as below, then publish (upload the changed files).
 
 Rebuild all packets any time with `python3 scripts/build_packets.py` (prints each size; warns if one is over Discord's 10 MB free upload limit and tries to compress it with Ghostscript).
+
+## Change the current mission (monthly)
+The **Current Mission** card at the top of the home page is driven by `data/current-mission.json`:
+```
+{ "mission": 5, "month": "November 2026", "deadline": "2026-11-30", "deadlineUtcOffset": "-05:00" }
+```
+Change `mission` (must exist in `data/missions.json`), `month` and `deadline` (YYYY-MM-DD; due end of that day). Use `-04:00` for Eastern daylight time and `-05:00` for standard time (after early November). The card shows days left, then "Deadline passed". Delete the file to hide the card.
 
 ## Add a new mission result
 1. Enter the result in the Google Sheet ("Mission Data": one Faction/VP pair per faction; faction names must match "Lore Name" in "Player Info"). Column position doesn't matter.

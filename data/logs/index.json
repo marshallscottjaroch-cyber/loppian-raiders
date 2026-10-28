@@ -69,6 +69,16 @@
       "body": "data/logs/m4-captain-tiberius.html",
       "original": "files/logs/m4-captain-tiberius.pdf",
       "subtitle": "Captain’s Log, star date 10.25.26"
+    },
+    {
+      "id": "m4-deacon-amos-vyrn",
+      "mission": 4,
+      "author": "Deacon-Champion Amos Vyrn",
+      "faction": "the-covenant-of-the-silent-axiom",
+      "title": "Report to the Elder: Aftermath – Mission 4, Psychic Nightmare",
+      "body": "data/logs/m4-deacon-amos-vyrn.html",
+      "original": "files/logs/m4-deacon-amos-vyrn.docx",
+      "subtitle": "The Silent Axiom’s Report – Tlatec, 22AUG26"
     }
   ],
   "pending": [
@@ -77,12 +87,6 @@
       "author": "Chudgore",
       "faction": "the-cult-of-excessive-violence",
       "note": "Log not yet submitted."
-    },
-    {
-      "mission": 4,
-      "author": "Deacon-Champion Amos Vyrn",
-      "faction": "the-covenant-of-the-silent-axiom",
-      "note": "Report to the Elder for Mission 4 is being written."
     },
     {
       "mission": 4,

@@ -7,6 +7,7 @@
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const fmt = n => (Math.round(n * 100) / 100).toString();
   const fmtDate = d => new Date(d + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  const missionDate = d => d ? fmtDate(d) : 'Players arrange date';
 
   Promise.all([get('data/players.json'), get('data/results.json'), get('data/missions.json'), get('data/logs/index.json'), get('data/current-mission.json').catch(() => null)])
     .then(([players, results, missions, logs, current]) => {
@@ -82,7 +83,7 @@
         : `<p class="note">${esc(m.rulesNote || 'Rules not yet added.')}</p>`;
       const nlogs = ctx.logs.logs.filter(l => l.mission === m.mission).length;
       return `<section class="card" id="mission-${m.mission}">
-        <span class="tag hot">JAX OPR Mission ${m.mission}</span><span class="tag">Voidsun Mission ${m.voidsunMission}</span><span class="tag">${fmtDate(m.date)}</span>
+        <span class="tag hot">JAX OPR Mission ${m.mission}</span><span class="tag">Voidsun Mission ${m.voidsunMission}</span><span class="tag">${missionDate(m.date)}</span>
         <h2>${m.voidsunName ? esc(m.voidsunName)+' — ' : ''}${esc(m.title)}</h2>
         <p class="muted small">${r ? r.results.length : 0} factions fought</p>
         ${m.gameNote ? `<p class="note">${esc(m.gameNote)}</p>` : ''}<div class="table-scroll">${res}</div>
@@ -109,7 +110,7 @@
     const secs = ctx.missions.slice().sort((a, b) => a.mission - b.mission).map(m => {
       const ls = logs.filter(l => l.mission === m.mission), pd = (pending || []).filter(l => l.mission === m.mission);
       if (!ls.length && !pd.length) return '';
-      return `<section id="log-mission-${m.mission}"><h2>Mission ${m.mission}: ${esc(m.voidsunName)} <span class="muted small">· ${fmtDate(m.date)}</span></h2>
+      return `<section id="log-mission-${m.mission}"><h2>Mission ${m.mission}: ${esc(m.voidsunName)} <span class="muted small">· ${missionDate(m.date)}</span></h2>
         ${ls.map(l => `<article class="card" id="${l.id}"><span class="tag">${esc(ctx.P[l.faction]?.loreName || '')}</span><h3>${esc(l.title)}</h3><p class="muted small">${esc(l.subtitle || '')} · by ${esc(l.author)}</p>
           <div class="log-body" data-src="${esc(l.body)}"><p class="muted">Loading…</p></div><p class="small"><a href="${esc(l.original)}">Original file</a></p></article>`).join('')}
         ${pd.map(l => `<article class="card pending"><span class="tag">${esc(ctx.P[l.faction]?.loreName || '')}</span><h3>Pending — ${esc(l.author)}</h3><p class="muted">${esc(l.note)}</p></article>`).join('')}</section>`; }).join('');

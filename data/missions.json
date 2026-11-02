@@ -229,5 +229,56 @@
         ]
       ]
     }
+  },
+  {
+    "mission": 5,
+    "briefing": [
+      "The third crystal was barely off the black water of Tlatec when the trouble began. The Covenant of the Silent Axiom had carried it from the beacon fields, and the logos engine had barely begun to drink its resonance, when the other two shards stopped answering. The one dragged out of Ontranis by the Dark Prime Brothers Raptors went quiet in its vault. The one Chudgore's cult tore from Xolkan went quiet in the dark of the warhost. In the cover of darkness, strangers with familiar faces found their way to where the crystals were kept, and as quickly as they entered, they left without a trace. The keepers woke to empty cradles and no one who remembered the theft.",
+      "Each warband learned of the loss in its own way. The Covenant's psychics felt the sisters of their shard go silent, like two voices cut from a choir. The Raptors found sealed doors undisturbed and guards who swore nothing had passed them. In the cult's camp, blood was spilled over the empty cradle before anyone thought to ask who had taken what. Accusations flew between all three. None of them were right.",
+      "Then the storms spoke the name. Tehaxi, a renegade Starseer who has been gathering the Voidcrown crystals for his own ends, had sent his Chameleons into the three strongholds. They walked in wearing the faces of guards and servants, and they walked out with the Voidcrown.",
+      "All three shards now ride a single convoy: an old Frog-Mage freight line that runs through the isles of Tlatec, towards the hidden temple beneath the waves where the crown is said to sleep. The Frog-Mages built the line to haul stone and relics between the beacon isles, long before the storms woke. The rails still run over causeways and bridges across the black water, and the train rolls along them at a pace nothing on foot can match. It is long, fast and loud, and it hides nothing. Every warband that lost a shard, or still wants one, has caught wind of the shipment at the same time, and each believes it alone has found the convoy.",
+      "Nobody is escorting the cargo. Everyone is racing the line. Hit the train at speed, hold your footing on the moving platforms, and break whoever stands between you and the cars. The ground rushes by, and anything that falls behind or over the edge is lost. Infantry cling to hooks and rails while vehicles tear alongside, and the wind carries the sound of the storms. Whoever takes the crystals must do it before the Starseer's procession reaches the temple and the last key is lost.",
+      "The Voidsun is listening to the wheels."
+    ],
+    "files": {
+      "briefing": "files/briefings/mission-5-briefing.pdf",
+      "rules": "files/rules/mission-5-rules.pdf",
+      "packet": "files/packets/loppian-raiders-mission-5-packet.pdf"
+    },
+    "title": "The Iron Procession: Cargo of Storms on Tlatec",
+    "voidsunMission": 4,
+    "voidsunName": "High Speed Chase",
+    "rules": {
+      "background": "Once the hidden Voidcrown crystal was discovered on Ontranis, escape became the top priority. The voyage back to the ships was marked by a series of daring chases over icy terrain where infantry struggled to keep pace with vehicles.",
+      "setup": [
+        "Battlefield: 6'×4' area with 10+ pieces of large terrain, which can easily be moved.",
+        "Armies: equal point cost; each army must have at least one hero.",
+        "Deployment: roll-off; the winner picks zone A or B, with their opponent taking the opposite. Players alternate placing one unit each within their deployment zone, starting with the roll-off winner.",
+        "First turn: the player that won the deployment roll-off."
+      ],
+      "objectives": [
+        "Before the game begins, count the total number of units in each player's army, and each player must also select one of their heroes to count as the army leader."
+      ],
+      "scoring": [
+        "End of game: 1 VP for destroying at least half of the units in the enemy army, plus 2 VPs for killing the enemy leader.",
+        "+1 VP for each enemy hero destroyed (not counting the army leader).",
+        "+1 VP if they destroyed the most expensive unit in the enemy army (including the leader).",
+        "Starting from the end of round 4, roll one die at the end of each round: on a 4+ the game continues, on a 1-3 it ends. The player with the most VP wins."
+      ],
+      "special": [
+        [
+          "High Speed",
+          "At the end of each round, all models and terrain pieces are moved 9\" in the direction of the arrow. Models that move off the table in this way are killed, and pieces of terrain are placed in the same spot on the opposite table edge."
+        ],
+        [
+          "Moving Transports",
+          "Before the game begins, each player may place D3 transport platforms at least 3\" in diameter in their deployment zone. Transport platforms and units on top of them are not moved by the high speed rule, and terrain pieces that would end up on top of them must keep moving until they aren't. Models that are moved onto or through a platform by the high speed rule must immediately take a Dangerous terrain test."
+        ],
+        [
+          "Hooks (special equipment)",
+          "Before the game begins, each army may provide D3+1 units with hooks. Units with hooks that are within 9\" of a transport platform at the end of the round may roll one die. On a 3+, they are not moved by the high speed rule for that round."
+        ]
+      ]
+    }
   }
 ]

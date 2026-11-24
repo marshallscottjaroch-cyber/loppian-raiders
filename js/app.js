@@ -111,8 +111,8 @@
       const ls = logs.filter(l => l.mission === m.mission), pd = (pending || []).filter(l => l.mission === m.mission);
       if (!ls.length && !pd.length) return '';
       return `<section id="log-mission-${m.mission}"><h2>Mission ${m.mission}: ${esc(m.voidsunName)} <span class="muted small">· ${missionDate(m.date)}</span></h2>
-        ${ls.map(l => `<article class="card" id="${l.id}"><span class="tag">${esc(ctx.P[l.faction]?.loreName || '')}</span><h3>${esc(l.title)}</h3><p class="muted small">${esc(l.subtitle || '')} · by ${esc(l.author)}</p>
-          <div class="log-body" data-src="${esc(l.body)}"><p class="muted">Loading…</p></div><p class="small"><a href="${esc(l.original)}">Original file</a></p></article>`).join('')}
+        ${ls.map(l => `<article class="card" id="${l.id}"><span class="tag">${esc(ctx.P[l.faction]?.loreName || '')}</span><h3>${esc(l.title)}</h3><p class="muted small">${l.subtitle ? esc(l.subtitle) + ' · ' : ''}by ${esc(l.author)}</p>
+          <div class="log-body" data-src="${esc(l.body)}"><p class="muted">Loading…</p></div>${l.original ? `<p class="small"><a href="${esc(l.original)}">Original file</a></p>` : ''}</article>`).join('')}
         ${pd.map(l => `<article class="card pending"><span class="tag">${esc(ctx.P[l.faction]?.loreName || '')}</span><h3>Pending — ${esc(l.author)}</h3><p class="muted">${esc(l.note)}</p></article>`).join('')}</section>`; }).join('');
     const fl = ctx.players.filter(p => logs.some(l => l.faction === p.id)).map(p => `<a id="log-faction-${p.id}" href="#${logs.find(l => l.faction === p.id).id}">${esc(p.commander)}</a>`).join(' ');
     app.innerHTML = `<h1>Campaign Log</h1><p class="muted">After-action reports written by the commanders, in mission order.</p><p class="toc small">Jump to: ${ctx.missions.map(m => `<a href="#log-mission-${m.mission}">M${m.mission}</a>`).join('')} · Authors: ${fl}</p>${secs}`;

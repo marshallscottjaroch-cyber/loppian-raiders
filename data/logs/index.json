@@ -89,6 +89,15 @@
       "subtitle": "The Silent Axiom’s Report – Tlatec, 15NOV26",
       "body": "data/logs/m5-deacon-amos-vyrn.html",
       "original": "files/logs/m5-deacon-amos-vyrn.docx"
+    },
+    {
+      "id": "m5-tlundi-the-small",
+      "mission": 5,
+      "author": "Tlundi the Small",
+      "faction": "tlundis-lounge",
+      "title": "To catch a train",
+      "body": "data/logs/m5-tlundi-the-small.html",
+      "original": null
     }
   ],
   "pending": [],

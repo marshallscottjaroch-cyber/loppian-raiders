@@ -2,7 +2,7 @@
   {
     "id": "the-covenant-of-the-silent-axiom",
     "loreName": "The Covenant of the Silent Axiom",
-    "army": "Dao Union",
+    "army": "DAO Union",
     "commander": "Deacon Amos Vyrn"
   },
   {
@@ -35,13 +35,13 @@
   {
     "id": "tlundis-lounge",
     "loreName": "Tlundi's Lounge",
-    "army": "",
-    "commander": ""
+    "army": "Saurian Starhost",
+    "commander": "Tlundi the Small"
   },
   {
     "id": "tiverians-crusaders",
     "loreName": "Tiverian's Crusaders",
-    "army": "",
-    "commander": ""
+    "army": "Custodian Brothers",
+    "commander": "Tiverian Solbard, The Gilded Blade"
   }
 ]

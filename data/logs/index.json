@@ -79,6 +79,16 @@
       "body": "data/logs/m4-deacon-amos-vyrn.html",
       "original": "files/logs/m4-deacon-amos-vyrn.docx",
       "subtitle": "The Silent Axiom’s Report – Tlatec, 25OCT26"
+    },
+    {
+      "id": "m5-deacon-amos-vyrn",
+      "mission": 5,
+      "author": "Deacon-Champion Amos Vyrn",
+      "faction": "the-covenant-of-the-silent-axiom",
+      "title": "Report to the Elder: Aftermath – Mission 5, High Speed Chase",
+      "subtitle": "The Silent Axiom’s Report – Tlatec, 15NOV26",
+      "body": "data/logs/m5-deacon-amos-vyrn.html",
+      "original": "files/logs/m5-deacon-amos-vyrn.docx"
     }
   ],
   "pending": [],

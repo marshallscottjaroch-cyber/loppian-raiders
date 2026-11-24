@@ -31,5 +31,17 @@
     "loreName": "3rd Aegis Strike Force",
     "army": "Robot Legions",
     "commander": "Commander Vectrix"
+  },
+  {
+    "id": "tlundis-lounge",
+    "loreName": "Tlundi's Lounge",
+    "army": "",
+    "commander": ""
+  },
+  {
+    "id": "tiverians-crusaders",
+    "loreName": "Tiverian's Crusaders",
+    "army": "",
+    "commander": ""
   }
 ]

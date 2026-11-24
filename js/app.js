@@ -31,7 +31,7 @@
     const rows = computeStandings(ctx);
     let rank = 0, prev = null;
     const body = rows.map((x, i) => { if (x.ratio !== prev) { rank = i + 1; prev = x.ratio; }
-      return `<tr class="${rank === 1 ? 'top1' : ''}"><td><span class="rank">${rank}</span></td><td><a href="factions.html#${x.p.id}">${esc(x.p.loreName)}</a><span class="sub">${esc(x.p.commander)} · ${esc(x.p.army)}</span></td><td class="num">${fmt(x.vp)}</td><td class="num">${x.games}</td><td class="num"><strong>${fmt(x.ratio)}</strong></td></tr>`; }).join('');
+      return `<tr class="${rank === 1 ? 'top1' : ''}"><td><span class="rank">${rank}</span></td><td><a href="factions.html#${x.p.id}">${esc(x.p.loreName)}</a><span class="sub">${[x.p.commander, x.p.army].filter(Boolean).map(esc).join(' · ')}</span></td><td class="num">${fmt(x.vp)}</td><td class="num">${x.games}</td><td class="num"><strong>${fmt(x.ratio)}</strong></td></tr>`; }).join('');
     const ms = ctx.results.missions;
     const matrix = rows.map(x => `<tr><td>${esc(x.p.loreName)}</td>${ms.map(m => `<td class="num">${m.mission in x.per ? fmt(x.per[m.mission]) : '<span class="dash">–</span>'}</td>`).join('')}<td class="num"><strong>${fmt(x.vp)}</strong></td></tr>`).join('');
     const mname = n => ctx.missions.find(m => m.mission === n);
@@ -101,7 +101,7 @@
       const nl = ctx.logs.logs.filter(l => l.faction === p.id).length;
       return `<section class="card" id="${p.id}"><h3>${esc(p.loreName)}</h3>
         <p><span class="muted small">Commander</span><br>${esc(p.commander || '—')}</p>${p.otherCharacters && p.otherCharacters.length ? `<p><span class="muted small">Also commanding</span><br>${p.otherCharacters.map(esc).join(', ')}</p>` : ''}
-        <p><span class="muted small">Army</span><br>${esc(p.army)}</p>
+        <p><span class="muted small">Army</span><br>${esc(p.army || '—')}</p>
         <p class="small muted">${s ? `${fmt(s.vp)} VP · ${s.games} game${s.games === 1 ? '' : 's'} · ${fmt(s.ratio)} VP/game` : 'No games yet'}${nl ? ` · <a href="log.html#log-faction-${p.id}">${nl} log${nl === 1 ? '' : 's'}</a>` : ''}</p></section>`; }).join('')}</div>`;
   }
 

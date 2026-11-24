@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27",
+  "generated": "2026-11-23",
   "missions": [
     {
       "mission": 1,
@@ -70,6 +70,34 @@
         {
           "player": "raptors-4th-company",
           "vp": 5
+        }
+      ]
+    },
+    {
+      "mission": 5,
+      "date": "2026-11-15",
+      "voidsunMission": 4,
+      "playerCount": 5,
+      "results": [
+        {
+          "player": "the-covenant-of-the-silent-axiom",
+          "vp": 3
+        },
+        {
+          "player": "raptors-4th-company",
+          "vp": 3
+        },
+        {
+          "player": "3rd-aegis-strike-force",
+          "vp": 3
+        },
+        {
+          "player": "tlundis-lounge",
+          "vp": 1
+        },
+        {
+          "player": "tiverians-crusaders",
+          "vp": 1
         }
       ]
     }
